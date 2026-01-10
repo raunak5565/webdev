@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .btn{
+            border: 1px solid green;
+            transition: all;
+            transition-duration: 1s;
+        }
+        .btn:hover{
+            background-color: aqua;
+        } */
+        .img-div{
+            & img{
+                width:200px;
+                transition:all 1s ease-in-out;
+            }   
+        }
+        img:hover {
+            transform: translate(400px,500px) rotate(260deg);
+            scale:0.5;
+
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn">
+        hello
+    </div>
+    <div class ="img-div">
+        <img src="https://media.istockphoto.com/id/1418379255/photo/net-zero-2050-carbon-neutral-and-net-zero-concept-natural-environment-a-climate-neutral-long.jpg?s=612x612&w=0&k=20&c=VEny_8m1_BQ3Y-ocqI7UNOSTwHMCzLCr_mlWwFcM5Mk=" alt="" srcset="">
+
+    </div>
+</body>
+</html>
