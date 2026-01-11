@@ -413,39 +413,82 @@
 
 // //copy and merging of n array
 
-// let a1 = [1,2]
-// let b1 = [3,4]
-// let newc1= a1.concat(b1);
-// console.log(newc1);
+// // let a1 = [1,2]
+// // let b1 = [3,4]
+// // let newc1= a1.concat(b1);
+// // console.log(newc1);
 
 
-// mynewarr2=[30,33,40,22]
+// // mynewarr2=[30,33,40,22]
 
-// console.log(mynewarr2.every((n)=>n>33 ===0));
+// // console.log(mynewarr2.every((n)=>n>33 ===0));
 
 
 
-// let arr101 = [3,7,12,5,20]
-// console.log(arr101.find((x)=>x>=10));
+// // let arr101 = [3,7,12,5,20]
+// // console.log(arr101.find((x)=>x>=10));
 
+
+// //q1
+// let dd = [10,5,20,8,20];
+// let set = new Set(dd)
+// result = [...set].sort((a,b)=>b-a)
+// console.log(result[1]);
+
+// //q2
+// let d1=[1,2,3,4,5,6]
+// let even=d1.filter((x)=>x%2===0)
+// console.log(even.length);
+
+
+// q3
+// let d2=[1,2,3,4,5,6]
+// let odd=d2.filter((x)=>x%2!==0);
+// console.log(odd.reduce((x,y)=>x+y));
+
+
+
+//11/jan/2026
+//dot notation and bracket notation
+// const objc2 = new Object();
+// objc2.first ="200"
+// console.log(objc2,"ddd");
+
+
+//accessing values
+
+// console.log(objc2.last);
+
+//add keys
+// user2.age= 25
+
+//update values
+// user2.name= "raunak"
+
+// delete user2.hobbies
 
 //q1
-let dd = [10,5,20,8,20];
-let set = new Set(dd)
-result = [...set].sort((a,b)=>b-a)
-console.log(result[1]);
 
-//q2
-let d1=[1,2,3,4,5,6]
-let even=d1.filter((x)=>x%2===0)
-console.log(even.length);
-
-
-//q3
-let d2=[1,2,3,4,5,6]
-let odd=d2.filter((x)=>x%2!==0);
-console.log(odd.reduce((x,y)=>x+y));
+const objc3 = new Object();
+objc3.first = "raunak";
+objc3.first1 = "raunak4";
+objc3["last name"] = "bamotra"
+console.log(objc3,"ddd");
 
 
 
+let user3 = {
+    name :"raunak",
+    city : "new delhi",
+    ph : 2342355,
+    isinactive : true
+}
+console.log(user3);
 
+
+//this refer to the current object in normal function
+
+
+for(let usr in user3){
+    console.log(usr);
+}
